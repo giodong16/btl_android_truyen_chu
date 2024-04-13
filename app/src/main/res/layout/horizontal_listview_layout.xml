@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_truyen_horizonal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="5sp"
+    android:paddingEnd="5sp"
+    android:paddingTop="15sp"
+    android:paddingBottom="15sp"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_horizonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10sp"
+        >
+        <ImageView
+            android:id="@+id/image_horizonal"
+            android:layout_width="90sp"
+            android:layout_height="130sp"
+            android:src="@drawable/baseline_image_not_supported_24"
+            android:scaleType="fitCenter"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/layout_1"
+            >
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:src="@drawable/open_book"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="2sp"
+                android:padding="2sp"
+                style="@style/style_icon_image"
+                android:clickable="false"
+                />
+            <TextView
+                android:id="@+id/textName_horizonal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="CÂY KHÔ GẶP XUÂN VỀ ABC ABC ABC ABACBABCABSC"
+                android:fontFamily="serif"
+                android:layout_marginStart="5sp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5sp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/layout_2"
+            >
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="25sp"
+                android:layout_height="20sp"
+                android:padding="0sp"
+                android:paddingStart="4sp"
+                android:paddingEnd="4sp"
+                style="@style/style_icon_image"
+                android:scaleType="fitXY"
+                android:src="@drawable/quill"
+
+                />
+
+            <TextView
+                android:id="@+id/textAuthorName_horizonal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cầm Kì Thi Họa"
+                android:fontFamily="serif"
+                android:layout_marginStart="5sp"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layout_2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/layout_3"
+            >
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="25sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:padding="0sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_list_24"
+                style="@style/style_icon_image"
+                />
+
+            <TextView
+                android:id="@+id/textChap_horizonal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="1254 chương"
+                android:fontFamily="serif"
+                android:layout_marginStart="5sp"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layout_3"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:padding="4sp"
+                android:scaleType="fitXY"
+                style="@style/style_icon_image"
+                android:src="@drawable/tag" />
+
+            <TextView
+                android:id="@+id/textTheLoai_horizonal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Đô thị, Tu tiên,Ngôn tình"
+                android:fontFamily="serif"
+                android:layout_marginStart="5sp"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

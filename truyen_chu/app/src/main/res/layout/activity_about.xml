@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+    <LinearLayout
+        android:id="@+id/title_bar_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/style_title_act"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <ImageButton
+            android:id="@+id/btn_quit_about"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/baseline_chevron_left_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/style_quit_image_button"
+            android:scaleType="fitXY"
+
+            />
+        <TextView
+            android:id="@+id/textAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingEnd="50sp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textHoanCanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sản phẩm này được tạo ra nhằm tạo một ra một nơi giúp người đọc có thể thả mình vào những trang sách, cảm nhận vẻ đẹp mà những ngôn từ của nó tạo ra cho họ"
+        app:layout_constraintTop_toBottomOf="@id/title_bar_about"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="30sp"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/textNguon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nguồn: Nguyễn Đình Tiếp"
+        app:layout_constraintTop_toBottomOf="@id/textHoanCanh"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="30sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:fontFamily="serif"
+        android:textSize="14sp"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liên hệ: 16032003tn@gmail.com"
+        app:layout_constraintTop_toBottomOf="@id/textNguon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="30sp"
+        android:linksClickable="true"
+        android:paddingBottom="10sp"
+        android:fontFamily="serif"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:autoLink="email"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

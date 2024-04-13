@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchFragment">
+
+    <SearchView
+        android:id="@+id/search_truyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Tìm kiếm truyện ..."
+        android:iconifiedByDefault="false"
+        android:layout_margin="10sp"
+        style="@style/search_view"
+        />
+    <TextView
+        android:id= "@+id/textThongbao_searchFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="“Nếu bạn không thích đọc, nghĩa là bạn chưa tìm được cuốn sách phù hợp.”"
+        android:textSize="18sp"
+        android:padding="20sp"
+        android:fontFamily="serif"
+
+        />
+    <ListView
+        android:id="@+id/listview_truyenSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/horizontal_listview_layout"
+        android:divider="@drawable/main_gradient"
+        android:dividerHeight="1sp"
+        android:layout_margin="10sp"
+        android:scrollbars="none"
+
+        />
+
+</LinearLayout>

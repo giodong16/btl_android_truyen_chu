@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_dialog"
+    android:backgroundTint="@color/white"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_dialog_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <LinearLayout
+            android:id="@+id/content_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <GridLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:minWidth="200dp"
+                android:weightSum="3">
+                <TextView
+                    android:id="@+id/success_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thành công"
+                    android:textSize="20sp"
+                    android:paddingStart="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/btn_success"
+                    />
+
+                <TextView
+                    android:id="@+id/success_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Xin chúc mừng!"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14sp"
+                     />
+
+            </GridLayout>
+            <ImageView
+                android:id="@+id/image_success"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/check"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/success_done"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#02B5B3"
+            android:text="OK"
+            android:background="@drawable/style_button_round"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/content_dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

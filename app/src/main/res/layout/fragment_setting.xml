@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SettingFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="CÀI ĐẶT CHUNG "
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lavender"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/setting_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/login"
+            app:shapeAppearanceOverlay="@style/roundImageView"
+            android:scaleType="centerCrop"
+            android:background="@drawable/style_avater_image"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tentaikhoan_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Đình Tiếp"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:padding="10sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20sp"
+            android:textColor="@color/lavender"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/textUpdate_thongtin_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật thông tin cá nhân"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:padding="10sp"
+            android:drawableStart="@drawable/baseline_update_24"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+            android:drawableTint="@color/lavender"
+            android:drawablePadding="10dp"
+
+            tools:ignore="UseCompatTextViewDrawableXml" />
+        <LinearLayout
+            android:id="@+id/update_thongtin_setting_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginStart="20dp"
+            android:background="#F1F1F1"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/textUpdate_thongtin_setting_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông tin cá nhân"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:padding="10sp"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/lavender"
+                />
+            <TextView
+                android:id="@+id/textUpdate_thongtin_setting_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đổi mật khẩu"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:padding="10sp"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/lavender"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textAbouUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/baseline_info_outline_24"
+            android:padding="10sp"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:drawableTint="@color/lavender"
+            android:drawablePadding="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lavender"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            />
+        <TextView
+            android:id="@+id/textDangXuat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:padding="10sp"
+            android:drawableTint="@color/lavender"
+            android:drawableStart="@drawable/baseline_logout_24"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

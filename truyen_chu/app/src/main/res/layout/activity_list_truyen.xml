@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".ListTruyenActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/style_title_act"
+        >
+        <ImageButton
+            android:id="@+id/btn_quit_listtruyen"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/baseline_chevron_left_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/style_quit_image_button"
+            android:scaleType="fitXY"
+
+            />
+        <TextView
+            android:id="@+id/textTenTruyVan_listTruyen_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Truyện"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingEnd="50sp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/lavender"
+        />
+
+    <TextView
+        android:id= "@+id/textThongbao_listruyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Không có truyện phù hợp!"
+        android:textSize="18sp"
+        android:visibility="gone"
+        />
+    <ListView
+        android:id="@+id/listview_listTruyenAct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:dividerHeight="1sp"
+        android:divider="@drawable/main_gradient"
+        android:layout_margin="10sp"
+        />
+</LinearLayout>

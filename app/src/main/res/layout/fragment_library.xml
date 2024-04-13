@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LibraryFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Kệ sách"
+        android:textSize="15sp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:textAllCaps="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/lavender"
+        />
+
+    <TextView
+        android:id= "@+id/textThongbao_library"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Hãy lưu giữ thêm cho bản thân một vài câu truyện hay nhé!"
+        android:padding="30sp"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_KeSach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/horizontal_listview_layout"
+        android:padding="10sp"
+        />
+
+</LinearLayout>

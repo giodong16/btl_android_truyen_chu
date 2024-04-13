@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="5sp"
+        >
+        <ImageView
+            android:id="@+id/image_vertical"
+            android:layout_width="80sp"
+            android:layout_height="120sp"
+            android:src="@drawable/baseline_image_not_supported_24"
+            android:scaleType="fitCenter"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+
+  <!--  <TextView
+        android:id="@+id/textStatus_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+
+        app:layout_constraintTop_toTopOf="@id/image_vertical"
+        app:layout_constraintStart_toStartOf="@id/image_vertical"
+
+        android:layout_marginTop="-5sp"
+        android:layout_marginStart="55sp"
+        android:background="@drawable/baseline_bookmark_24"
+        android:backgroundTint="@color/bookmark_color"
+       />-->
+    <TextView
+        android:id="@+id/textName_vertical"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:text="Cây khô gặp xuân về"
+        android:gravity="center"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toBottomOf="@id/cardview"
+        app:layout_constraintStart_toStartOf="@id/cardview"
+        android:textSize="10sp"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/black"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

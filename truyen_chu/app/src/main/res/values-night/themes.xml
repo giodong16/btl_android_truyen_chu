@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Truyen_Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--màu thanh trạng thái-->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/darklv2</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/darklv1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/darklv2</item>
+    </style>
+
+    <style name="style_quit_image_button" parent="Widget.AppCompat.ImageButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="textView_title_style" >
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="style_icon_image" parent="Widget.AppCompat.ImageButton">
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="style_title_act" parent="">
+        <item name="android:background">@color/darklv2</item>
+    </style>
+
+    <style name="search_view">
+        <item name="android:background">@drawable/style_searchview_night</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="style_button_theloai">
+        <item name="android:background">@drawable/style_tag_theloai_night</item>
+        <item name="android:textColor">@color/lavender</item>
+    </style>
+
+    <style name="styleThemTruyenText">
+        <item name="android:textColor">@color/lavender</item>
+        <item name="drawableTint">@color/lavender</item>
+    </style>
+
+    <style name="myTheme" parent="Truyen_Theme" />
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DanhMucFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+
+        android:text="Danh mục"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:fontFamily="serif"
+        android:textAllCaps="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/lavender"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="20sp"
+                android:layout_height="match_parent"/>
+            <GridLayout
+                android:id="@+id/gridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:columnCount="2"
+                android:columnOrderPreserved="true"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
